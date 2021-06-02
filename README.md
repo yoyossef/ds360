@@ -2,6 +2,8 @@
 
 Initially wanted to implement Sony's PlayStation 5 controller support to `sc-controller` for broader config options but couldn't be bothered with all the python debugging right now.
 
+Useful for games not recognizing the Dualsense for some reason, like RDR 2 or Dragon Quest XI or other non-steam games in my testing, emulating the controller as a 360 fixes the compatibility gap entirely so a Dualsense can be used as the ultimate controller.
+
 ## Pre-requirements
 
 
