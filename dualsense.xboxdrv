@@ -1,6 +1,6 @@
 [xboxdrv]
 
-evdev = /dev/input/event29
+#evdev = /dev/input/by-id/usb-Sony_Interactive_Entertainment_Wireless_Controller-if03-event-joystick
 evdev-grab = true
 evdev-debug = false
 mimic-xpad = true
