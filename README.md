@@ -13,15 +13,27 @@ The program is mainly based on xboxdrv's excellent ability to emulate a 360 cont
 - Install xboxdrv (https://xboxdrv.gitlab.io)
 - Basic dev tools like `g++` or `make`
 
-## Installation
-
+## How to compile
 ```
-make install
+git clone https://github.com/yoyossef/ds360.git
+cd ds360
+make
 ```
-
 ## Usage
 ```
 ./ds360
+```
+## How to install
+```
+git clone https://github.com/yoyossef/ds360.git
+cd ds360
+make install
+```
+
+## How to uninstall
+
+```
+make uninstall
 ```
 
 ## Troubleshooting
