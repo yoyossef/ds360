@@ -20,8 +20,17 @@ cd ds360
 make
 ```
 ## Usage
+#### Starting the process in terminal, press CTRL+C to stop
 ```
 ./ds360
+```
+#### Starting ds360.service manually, controller must be connected
+```
+systemctl start --user ds360.service
+```
+#### Automatically start ds360.service via udev rule when controller connects
+```
+./add-udev-rule.sh
 ```
 ## How to install
 ```

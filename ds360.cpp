@@ -76,10 +76,30 @@ std::string get_device(std::string device_vid, std::string device_pid)
     return device_path;
 }
 
+void create_pid_file() {
+    std::string pid_file = "/tmp/ds360.pid";
+    pid_t pid = getpid();
+    std::ofstream file_output;
+    auto pid_str = std::to_string(pid);
+
+    std::cout << "pid: " << pid_str << std::endl;
+    file_output.open(pid_file.c_str());
+
+    if (!file_output.is_open())
+    {
+        std::cerr << "file_output.open >> " << std::strerror(errno) << std::endl;
+        throw -2;
+    }
+
+    file_output << pid_str.c_str() << std::endl;
+    file_output.close();
+}
+
 int main(int argc, char* argv[])
 {
     try
     {
+        create_pid_file();
         std::string event_path = get_device("054c", "0ce6");
         if (argc < 2) {
             execvp("xboxdrv", 

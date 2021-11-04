@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="input", ATTRS{id/vendor}=="054c", ATTRS{id/product}=="0ce6", TAG+="systemd", ENV{SYSTEMD_USER_WANTS}="ds360.service"
+ACTION=="remove", SUBSYSTEM=="input", ATTRS{id/vendor}=="054c", ATTRS{id/product}=="0ce6", RUN+="kill -9 $(cat /tmp/ds360.pid)"

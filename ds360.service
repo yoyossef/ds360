@@ -1,0 +1,9 @@
+[Unit]
+Description=ds360 service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/ds360
+
+[Install]
+WantedBy=default.target
