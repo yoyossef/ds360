@@ -15,4 +15,5 @@ uninstall:
 	rm -f $(HOME)/.config/systemd/user/ds360.service
 	systemctl --user daemon-reload
 	sudo rm -f /usr/lib/udev/rules.d/80-ds360.rules
+	sudo rm -f /usr/bin/ds360-stop.sh
 	sudo udevadm control --reload
