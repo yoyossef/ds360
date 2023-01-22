@@ -12,10 +12,31 @@ The program is mainly based on xboxdrv's excellent ability to emulate a 360 cont
 
 ## Pre-requirements
 
-
 - Have a recent kernel (5.12+) that includes the latest official drivers (hid-playstation)
 - Install xboxdrv (https://xboxdrv.gitlab.io)
 - Basic dev tools like `g++` or `make`
+
+## Ready to play
+If you have an Arch Linux, you can install the entire package with the command below.
+
+### yay
+```
+yay ds360
+```
+
+### manual
+```
+git clone https://aur.archlinux.org/xboxdrv.git
+cd xboxdrv
+makepkg -is
+
+git clone https://aur.archlinux.org/ds360.git
+cd ds360
+makepkg -is
+```
+
+#### source: 
+https://aur.archlinux.org/packages/ds360
 
 ## How to compile
 ```
