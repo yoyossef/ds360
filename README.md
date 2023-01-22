@@ -1,3 +1,7 @@
+# **Not maintained anymore**
+
+I'm sure someone would find a more elegant way of doing this than simply wrapping xboxdrv, latest Proton + Steam Input work perfectly for me, add non-steam shortcut if it doesn't work (Steam Deck work seems to have improved controller support).
+
 # Emulate Dualsense as a 360 controller on Linux
 
 Initially wanted to implement Sony's PlayStation 5 controller support to `sc-controller` for broader config options but couldn't be bothered with all the python debugging right now.
